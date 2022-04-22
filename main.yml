@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: localhost
+  become: true
+
+  tasks:
+  - name: install package
+    apt: 
+      name: 
+        - mlocate
+        - mc
